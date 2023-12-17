@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--Etiqueta especial per especificar que és un XML i per indicar que utilitzarem el charset "UTF_8·-->
+<!DOCTYPE note SYSTEM "traduccio.dtd">
+<botiga> <!--Botiga-->
+    <stock> <!--El Stock-->
+        <videojocs_stock> <!--Tipus del Stock-->
+            <categoria_videojoc category="Action"> <!--Categoria de videojocs. En aquest cas, és del gènere d'Acció-->
+                <videojoc_info id_joc="Vid01"> <!--Indica Videojoc-->
+                    <video_title lang="en" id_joc="Vid01">GTA6</video_title> <!--Nom del videojoc-->
+                    <develop>Rockstar</develop> <!--Desarrolladora del videojoc-->
+                    <year_rel>2024</year_rel> <!--Any de llançament del videojoc-->
+                    <price_prod>80€</price_prod> <!-- Preu del videojoc-->
+                    <unitats_disp>2000</unitats_disp> <!-- Unitats disponibles a la botiga-->
+                </videojoc_info>
+
+                <videojoc_info id_joc="Vid02"> <!--Indica Nou Videojoc-->
+                    <video_title lang="en" id_joc="Vid02">The Last Of Us</video_title>
+                    <develop>Naughty Dog</develop>
+                    <year_rel>2013</year_rel>
+                    <price_prod>40€</price_prod>
+                    <unitats_disp>4000</unitats_disp>
+                </videojoc_info>
+            </categoria_videojoc>
+
+            <categoria_videojoc category="Shooter"> <!--Nova categoria de videojocs. En aquest cas, és del gènere de Shooter-->
+                <videojoc_info id_joc="Vid03">
+                    <video_title lang="en" >Doom</video_title>
+                    <develop>Id Software</develop>
+                    <year_rel>1993 </year_rel>
+                    <price_prod>50€</price_prod>
+                    <unitats_disp>2500</unitats_disp>
+                </videojoc_info>
+
+                <videojoc_info id_joc="Vid04">
+                    <video_title lang="en" id_joc="Vid04">Fornite</video_title>
+                    <develop>Epic Games</develop>
+                    <year_rel>2017</year_rel>
+                    <price_prod>40€</price_prod>
+                    <unitats_disp>3000</unitats_disp>
+                </videojoc_info>
+            </categoria_videojoc>
+        </videojocs_stock>
+    </stock>
+    <client> <!-- Categoria per guardar info dels cleints-->
+        <tipus_client> <!--Per especificar el tipus de clients-->
+            <casual> <!--naixement-->
+                <nom>Pepe</nom> <!--Nom-->
+                <cogmons>Pepper</cogmons> <!--Cognoms del client-->
+                <genere>Home</genere> <!--Genere del client-->
+                <productes_comprats> <!--Productes comprats pel client-->
+                    <videojocs_comprats> <!--El tipus de productes comprats pel client. Aquesta secció seria per guardar els videojocs comprats-->
+                        <id_videojoc>Vid02</id_videojoc> <!--Referencia el id del videojoc per així no tenir que ponar la info del joc-->
+                        <data_compra>2023-07-16</data_compra> <!--Guardem la data la cual s'ha comprat el joc-->
+                    </videojocs_comprats>
+                </productes_comprats>
+                <dni>67892351a</dni> <!--El dni del client-->
+                <data_naixement>2004</data_naixement> <!--La data de naixement-->
+                <telefon>653718905</telefon> <!--El telefon de contacte del client-->
+            </casual>
+            <soci> <!--Secció per als clients registrats com a socis. La info es la mateixa que els de casual-->
+                <nom>Pablo</nom>
+                <cognom>Puertas</cognom>
+                <genere>Home</genere>
+                <productes_comprats>
+                    <videojocs_comprats>
+                        <id_videojoc>Vid05</id_videojoc>
+                        <data_compra>2023-08-23</data_compra>
+                    </videojocs_comprats>
+                </productes_comprats>
+                <dni>12345678D</dni>
+                <data_naixement>2000</data_naixement>
+                <telefon>675913450</telefon>
+            </soci>
+        </tipus_client>
+    </client>
+</botiga>
+
+
+
+
+
+
+

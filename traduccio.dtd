@@ -1,0 +1,34 @@
+<!ELEMENT botiga (stock)>
+        <!ELEMENT stock (videojocs_stock, client)>
+        <!ELEMENT videojocs_stock (categoria_videojoc)
+        <!ELEMENT categoria_videojoc (videojoc_info+)>
+        <!ELEMENT videojoc_info (video_title, develop, year_rel, price_prod, unitats_disp)
+        <!ELEMENT video_title (#PCDATA)>
+        <!ELEMENT develop (#PCDATA)>
+        <!ELEMENT year_rel (#PCDATA)>
+        <!ELEMENT price_prod (#PCDATA)>
+        <!ELEMENT unitats_disp (#PCDATA)>
+        <!ELEMENT client (tipus_client)>
+        <!ELEMENT tipus_client (casual*, soci*)>
+        <!ELEMENT casual (nom, cognoms, genere, productes_comprats, dni, data_naixement, telefon?)>
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT cognoms (#PCDATA)>
+        <!ATTLIST genere (home | dona) #REQUIRED >
+        <!ELEMENT productes_comprats (videojocs_comprats+)>
+        <!ELEMENT videojocs_comprats (id_videojoc, data_compra)>
+        <!ELEMENT id_videojoc (#PCDATA)>
+        <!ELEMENT data_compra (#PCDATA)>
+        <!ELEMENT dni (#PCDATA) #REQUIRED>
+        <!ELEMENT data_naixement (#PCDATA)>
+        <!ELEMENT telefon (#PCDATA)>
+        <!ELEMENT soci (nom, cognoms, genere, productes_comprats, dni, data_naixement, telefon?)>
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT cognoms (#PCDATA)>
+        <!ELEMENT genere (home | dona)>
+        <!ELEMENT productes_comprats (videojocs_comprats+)>
+        <!ELEMENT videojocs_comprats (id_videojoc, data_compra)>
+        <!ELEMENT id_videojoc (#PCDATA)>
+        <!ELEMENT data_compra (#PCDATA)>
+        <!ELEMENT dni (#PCDATA) #REQUIRED>
+        <!ELEMENT data_naixement (#PCDATA)>
+        <!ELEMENT telefon (#PCDATA)>
